@@ -1,5 +1,0 @@
-btn solid #ECE0FD
-btn text stroke #9656F3
-editText stroke #90C33E (green)
-red #CB2121
-textunderImage #707070
