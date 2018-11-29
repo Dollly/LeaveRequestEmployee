@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#90c33e</color>
+
+    <color name="colorLoginLayout">#ffffff</color>
+    <color name="colorTextUnderLogo">#707070</color>
+    <color name="colorStroke">#90c33e</color>
+    <color name="colorTextInvalid">#CB2121</color>
+    <color name="colorBtStroke">#9656f3</color>
+    <color name="colorBtFill">#ece0fd</color>
+    <color name="colorFocus">#3185cf</color>
+
+    <color name="colorTab">#d6d4d4</color>
+    <color name="colorTabIcon">#727273</color>
+    <color name="colorTabSelected">#3e49ec</color>
+
+    <color name="colorFormBackground">#bce9e7e7</color>
+
+    <color name="colorIconCry">#C0392B</color>
+
+    <color name="colorPending">#e1d156</color>
+
+</resources>

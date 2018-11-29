@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFormBackground">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/new_wave_logo"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true"
+        android:background="@color/colorLoginLayout"
+        android:padding="16dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/gotham"
+        android:scaleType="centerCrop"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfile">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/profile_margin_title_top"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ အမည္"/>
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_title_top"
+                android:text="■ ရာထူး"/>
+            <TextView
+                android:id="@+id/tvProfileRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_title_top"
+                android:text="■ အလုပ္စရက္"/>
+            <TextView
+                android:id="@+id/tvProfileWorkStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_title_top"
+                android:text="■ ဌာန"/>
+            <TextView
+                android:id="@+id/tvProfileDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_title_top"
+                android:text="■ လစာ"/>
+            <TextView
+                android:id="@+id/tvProfileSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_title_top"
+                android:text="■ ခြင့္ရက္က်န္"/>
+            <TextView
+                android:id="@+id/tvProfileRemainDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_margin_tv_top"
+                android:layout_marginLeft="@dimen/profile_margin_left"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

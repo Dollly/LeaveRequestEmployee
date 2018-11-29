@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Login
+     //Logo
+    <dimen name="text_under_logo">12dp</dimen>
+     //Shape
+    <dimen name="shape_radius">8dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="shape_padding_top">0dp</dimen>
+    <dimen name="shape_padding_right">10dp</dimen>
+    <dimen name="shape_padding_left">10dp</dimen>
+    <dimen name="shape_padding_bottom">0dp</dimen>
+    <dimen name="edt_width">500dp</dimen>
+    <dimen name="edt_height">45dp</dimen>
+    <dimen name="edt_code_margin_top">100dp</dimen>
+    <dimen name="edt_password_margin_top">15dp</dimen>
+    <dimen name="tv_invalid_margin_top">15dp</dimen>
+    <dimen name="tv_invalid_margin_left">30dp</dimen>
+    <dimen name="bt_login_margin_top">30dp</dimen>
+    <dimen name="bt_login_margin_left">100dp</dimen>
+    <dimen name="heart_margin_bottom_row_one">200dp</dimen>
+    <dimen name="heart_margin_bottom_row_two">110dp</dimen>
+    <dimen name="heart_margin_bottom_row_three">16dp</dimen>
+    <dimen name="heart_margin_start_col_2">80dp</dimen>
+    <dimen name="heart_margin_start_col_3">155dp</dimen>
+    <dimen name="heart_margin_start_col_4">235dp</dimen>
+
+    <dimen name="leave_form_margin_top">10dp</dimen>
+    <dimen name="leave_form_padding">10dp</dimen>
+    <dimen name="leave_form_padding_left">10dp</dimen>
+    <dimen name="leave_form_padding_bottom">10dp</dimen>
+    <dimen name="leave_form_padding_right">10dp</dimen>
+
+    <dimen name="profile_margin_start_dash">150dp</dimen>
+    <dimen name="profile_margin_start">170dp</dimen>
+    <dimen name="profile_margin_top">30dp</dimen>
+
+    <dimen name="profile_margin_left">17dp</dimen>
+    <dimen name="profile_margin_tv_top">5dp</dimen>
+    <dimen name="profile_margin_title_top">15dp</dimen>
+
+</resources>

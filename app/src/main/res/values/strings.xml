@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LeaveRequestEmployee</string>
+    //Login
+    <string name="text_under_logo">Need a rest? Take Leave!</string>
+    <string name="text_code_hint">Code</string>
+    <string name="text_password_hint">Password</string>
+    <string name="text_bt_login">Log in</string>
+
+    <string name="text_leave_form_date_from">Date (From)</string>
+    <string name="text_leave_form_date_to">Date (To)</string>
+</resources>

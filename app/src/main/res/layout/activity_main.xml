@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorLoginLayout">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new_wave_logo"/>
+
+    <TextView
+        android:id="@+id/tvUnderLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_alignEnd="@+id/logo"
+        android:text="@string/text_under_logo"
+        android:textStyle="italic"
+        android:textColor="@color/colorTextUnderLogo"
+        android:textSize="@dimen/text_under_logo"/>
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="@dimen/edt_width"
+        android:layout_height="@dimen/edt_height"
+        android:hint="@string/text_code_hint"
+        android:layout_below="@+id/tvUnderLogo"
+        android:layout_alignEnd="@+id/tvUnderLogo"
+        android:background="@drawable/login_edt_shape"
+        android:layout_marginTop="@dimen/edt_code_margin_top"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_code"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="@dimen/edt_width"
+        android:layout_height="@dimen/edt_height"
+        android:hint="@string/text_password_hint"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edtCode"
+        android:layout_alignEnd="@+id/tvUnderLogo"
+        android:background="@drawable/login_edt_shape"
+        android:layout_marginTop="@dimen/edt_password_margin_top"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_password"/>
+
+    <TextView
+        android:id="@+id/tvInvalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginTop="@dimen/tv_invalid_margin_top"
+        android:layout_marginLeft="@dimen/tv_invalid_margin_left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorTextInvalid"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInvalid"
+        android:layout_marginTop="@dimen/bt_login_margin_top"
+        android:layout_marginLeft="@dimen/bt_login_margin_left"
+        android:text="@string/text_bt_login"
+        app:backgroundTint="@color/colorBtFill"
+        app:strokeColor="@color/colorBtStroke"
+        app:strokeWidth="1dp"
+        android:elevation="8dp"
+        android:textColor="@color/colorBtStroke"/>
+
+</RelativeLayout>

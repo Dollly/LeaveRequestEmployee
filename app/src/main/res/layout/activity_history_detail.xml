@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_history_detail"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:id="@+id/imgHistoryDecision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_leave_accept"/>
+
+                <TextView
+                    android:id="@+id/tvHistoryDecision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Request was accepted"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/colorAccent"
+                    android:background="@color/colorLoginLayout"/>
+            </LinearLayout>
+
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                app:strokeWidth="1dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/tvHistoryNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="အမည္"
+                        android:paddingBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tvHistoryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryNameTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Mr.Gotham"/>
+                    <TextView
+                        android:id="@+id/tvHistoryRoleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ရာထူး"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvHistoryName"/>
+                    <TextView
+                        android:id="@+id/tvHistoryRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryRoleTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Developer"/>
+                    <LinearLayout
+                        android:id="@+id/layoutHistoryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/tvHistoryRole"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvHistoryStartDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ခြင့္စတင္ယူသည့္ရက္"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tvHistoryStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHistoryStartDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorFormBackground"
+                                android:padding="8dp"
+                                android:text="21-4-2015" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="16dp"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvHistoryEndDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ခြင့္ေနာက္ဆံုးယူသည့္ရက္"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tvHistoryEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvHistoryEndDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorFormBackground"
+                                android:padding="8dp"
+                                android:text="23-4-2015" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvHistoryLeavesDayTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ခြင့္ရက္ အေရအတြက္"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/layoutHistoryDate"/>
+                    <TextView
+                        android:id="@+id/tvHistoryLeavesDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryLeavesDayTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="၃ ရက္"/>
+                    <TextView
+                        android:id="@+id/tvHistoryReasonTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ခြင့္ယူရသည့္ အေၾကာင္းအရင္း"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvHistoryLeavesDay"/>
+                    <TextView
+                        android:id="@+id/tvHistoryReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryReasonTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="ေနမေကာင္းပါသျဖင့္"/>
+                    <TextView
+                        android:id="@+id/tvHistoryDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="အလုပ္မ်ားကိုလႊဲထားသည့္သူ"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvHistoryReason"/>
+                    <TextView
+                        android:id="@+id/tvHistoryDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryDutyTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Jerome"/>
+                    <TextView
+                        android:id="@+id/tvHistoryTypeOfDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="လႊဲအပ္ထားေသာအလုပ္မ်ား"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvHistoryDuty"/>
+                    <TextView
+                        android:id="@+id/tvHistoryTypeOfDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistoryTypeOfDutyTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Test Case ထုတ္ရန္"/>
+                    <TextView
+                        android:id="@+id/tvHistorySubmitDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="လႊဲအပ္ထားေသာအလုပ္မ်ား ကိုေသခ်ာစြာရွင္းျပထားျခင္းရွိ/မရွိ"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvHistoryTypeOfDuty"/>
+                    <TextView
+                        android:id="@+id/tvHistorySubmitDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorFormBackground"
+                        android:layout_below="@+id/tvHistorySubmitDutyTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:text="Yes"/>
+
+
+                </RelativeLayout>
+
+            </android.support.design.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <include
+                android:id="@+id/toolbarLeaveForm"
+                layout="@layout/toolbar"/>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_below="@+id/toolbarLeaveForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/leaveFormLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFormBackground"
+                    android:padding="@dimen/leave_form_padding"
+                    android:text="@string/text_leave_form_date_from"
+                    android:textColor="@color/colorStroke" />
+
+                <TextView
+                    android:id="@+id/tvFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFrom"
+                    android:background="@color/colorFormBackground"
+                    android:paddingLeft="@dimen/leave_form_padding_left"
+                    android:paddingBottom="@dimen/leave_form_padding_bottom"
+                    android:text="စတင္ခြင့္ယူမည့္ရက္" />
+
+                <ImageView
+                    android:id="@+id/imgFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvFrom"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="@dimen/leave_form_padding_right"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFromDate"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:padding="@dimen/leave_form_padding"
+                    android:text="@string/text_leave_form_date_to"
+                    android:textColor="@color/colorStroke" />
+
+                <TextView
+                    android:id="@+id/tvToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTo"
+                    android:background="@color/colorFormBackground"
+                    android:paddingLeft="@dimen/leave_form_padding_left"
+                    android:paddingBottom="@dimen/leave_form_padding_bottom"
+                    android:text="ေနာက္ဆံုးခြင့္ယူမည့္ရက္" />
+
+                <ImageView
+                    android:id="@+id/imgToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvTo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="@dimen/leave_form_padding_right"
+                    android:src="@drawable/calendar"/>
+
+                <LinearLayout
+                    android:id="@+id/noOfDaysLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvToDate"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNoOfDaysTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/leave_form_padding_left"
+                        android:paddingTop="@dimen/leave_form_margin_top"
+                        android:paddingRight="@dimen/leave_form_padding_right"
+                        android:text="ရက္ အေရအတြက္" />
+
+                    <EditText
+                        android:id="@+id/edtNoOfDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvNoOfDaysTitle"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="number"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reasonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noOfDaysLayout"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/leave_form_padding_left"
+                        android:paddingTop="@dimen/leave_form_margin_top"
+                        android:paddingRight="@dimen/leave_form_padding_right"
+                        android:text="ခြင့္ယူရသည့္ အေၾကာင္းအရင္း" />
+
+                    <EditText
+                        android:id="@+id/edtReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvReason"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="text"
+                        android:minLines="2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dutyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reasonLayout"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/leave_form_padding"
+                        android:text="အလုပ္မ်ားကို မည္သူႏွင့္ လႊဲထားပါသနည္း"/>
+                    <Spinner
+                        android:id="@+id/spinnerDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDuty"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/typeOfDutyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dutyLayout"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTypeOfDutyTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/leave_form_padding_left"
+                        android:paddingTop="@dimen/leave_form_margin_top"
+                        android:paddingRight="@dimen/leave_form_padding_right"
+                        android:text="သင္လႊဲအပ္ထားခဲ့ေပးေသာအလုပ္မ်ားကို ေျပာျပေပးပါ" />
+
+                    <EditText
+                        android:id="@+id/edtTypeOfDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTypeOfDutyTitle"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSubmitDuty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/leave_form_padding_left"
+                    android:paddingTop="@dimen/leave_form_margin_top"
+                    android:paddingRight="@dimen/leave_form_padding_right"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:background="@color/colorFormBackground"
+                    android:layout_below="@+id/typeOfDutyLayout"
+                    android:text="လႊဲအပ္ထားခဲ့ေသာအလုပ္မ်ားကို ေသခ်ာစြာရွင္းျပျပီးျပီလား" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSubmitDuty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/tvSubmitDuty"
+                    android:background="@color/colorFormBackground"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/radioSubmitDutyYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="အင္း"/>
+                    <RadioButton
+                        android:id="@+id/radioSubmitDutyNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="ဟင့္အင္း"/>
+                </RadioGroup>
+
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/btSubitLeaveYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroupSubmitDuty"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:text="တင္မည္"
+                    android:textColor="@color/colorLoginLayout" />
+
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/btSubitLeaveNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroupSubmitDuty"
+                    android:layout_alignEnd="@+id/tvFrom"
+                    android:layout_marginTop="@dimen/leave_form_margin_top"
+                    android:layout_marginEnd="60dp"
+                    android:text="မတင္ပါ"
+                    android:textColor="@color/colorLoginLayout"/>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>

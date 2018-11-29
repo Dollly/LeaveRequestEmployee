@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historyCardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorFormBackground"
+    android:elevation="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutHistoryCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center">
+
+        <ImageView
+            android:id="@+id/imgHistoryDecisionCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_leave_accept" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHistoryDecisionCard"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/layoutHistoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHistoryDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ခြင့္တင္သည့္ရက္" />
+
+                <TextView
+                    android:id="@+id/tvHistoryNoOfLeaveDaysTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ခြင့္ရက္ အေရအတြက္" />
+
+                <TextView
+                    android:id="@+id/tvHistoryStartDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ခြင့္စတင္ယူသည့္ရက္" />
+
+                <TextView
+                    android:id="@+id/tvHistoryEndDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ခြင့္ေနာက္ဆံုးယူသည့္ရက္" />
+
+                <TextView
+                    android:id="@+id/tvHistoryReasonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="အေၾကာင္းအရင္း" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHistoryDash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/layoutHistoryTitle"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHistoryDashDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistoryDashNoOfLeaveDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistoryDashStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistoryDashEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHistoryDashReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layoutHistoryDash"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHistoryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22-11-2015" />
+
+                <TextView
+                    android:id="@+id/tvHistoryNoOfLeaveDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="၃ ရက္" />
+
+                <TextView
+                    android:id="@+id/tvHistoryStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="23-11-2015" />
+
+                <TextView
+                    android:id="@+id/tvHistoryEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="25-11-2015" />
+
+                <TextView
+                    android:id="@+id/tvHistoryReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:minLines="2"
+                    android:text="ေနမေကာင္းပါသျဖင့္" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

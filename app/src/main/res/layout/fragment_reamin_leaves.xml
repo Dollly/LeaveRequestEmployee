@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/remainNoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+            <TextView
+                android:id="@+id/tvReamining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="80dp"
+                android:text="Remaining"
+                android:textColor="@color/colorStroke"/>
+
+            <TextView
+                android:id="@+id/tvOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvReamining"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="110dp"
+                android:text="Out of"
+                android:textColor="@color/colorStroke"/>
+
+            <TextView
+                android:id="@+id/tvRemainNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvReamining"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:text="07"
+                android:textSize="56dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorStroke"/>
+
+            <TextView
+                android:id="@+id/tvLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvRemainNo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="175dp"
+                android:text="/"
+                android:textSize="56dp" />
+
+            <TextView
+                android:id="@+id/tvOutOfNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvOutOf"
+                android:layout_alignRight="@+id/tvRemainNo"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginRight="-102dp"
+                android:text="12"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorStroke"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/heartLayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/remainNoLayout">
+
+            <ImageView
+                android:id="@+id/imgHeart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_one"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_2"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_one"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_3"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_one"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_4"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_one"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_two"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_2"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_two"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_3"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_two"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_4"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_two"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_three"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_2"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_three"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_3"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_three"
+                android:src="@drawable/broken_heart" />
+
+            <ImageView
+                android:id="@+id/imgHeart12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/heart_margin_start_col_4"
+                android:layout_marginBottom="@dimen/heart_margin_bottom_row_three"
+                android:src="@drawable/broken_heart" />
+
+        </RelativeLayout>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            app:icon="@drawable/ic_cry"
+            app:iconTint="@color/colorIconCry"
+            app:iconSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorLoginLayout"
+            android:text="ခြင့္တင္ရန္"
+            android:textSize="20dp"
+            android:layout_below="@+id/heartLayout"/>
+
+    </RelativeLayout>
+
+</ScrollView>
